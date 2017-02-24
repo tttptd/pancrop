@@ -1,23 +1,45 @@
+<!doctype html>
 <html>
 <head>
-    <style>
-        img
-        {
-            width: 100%;
-            height: auto;
-        }
-    </style>
+    <meta charset="utf-8">
+    <title>PanCrop</title>
+    <meta name="viewport" content="width=device-width, user-scalable=1">
+
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
 
-    <input type="file" id="file">
-    <br>
-    <!-- <canvas style="outline: 1px solid red;"></canvas> -->
-    <div id="result">
+    <!-- <img src="i/IMG_1361.jpg" id="source" style="display: none; width: 100%;"> -->
+
+    <div class="start-screen">
+
+        <div class="start-screen__result">
+            <div class="result-tmbs"></div>
+            <div class="please-wait" style="display: none;"></div>
+        </div>
+
+        <div class="start-screen__upload">
+            <label class="link upload">
+                Upload new picture
+                <input type="file" id="file">
+            </label>
+        </div>
 
     </div>
 
-    <script src="./scripts/app.js"></script>
+    <div class="result-screen" style="display: none;">
+        <div>
+            Save all pictures to your device
+        </div>
+
+        <div class="result-full"></div>
+
+    </div>
+
+    <script src="bower_components/spin.js/spin.min.js"></script>
+    <!-- <script src="bower_components/vow/vow.min.js"></script> -->
+    <script src="scripts/app.js"></script>
+
 </body>
 </html>
