@@ -6,7 +6,7 @@
     <title>PanCrop</title>
     <meta name="viewport" content="width=device-width, user-scalable=1">
 
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./PanCrop_files/main.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i" rel="stylesheet">
     </head>
 
@@ -44,7 +44,7 @@
             </svg>
         <h1>Split panoramas for the Instagram slideshow</h1>
         <div class="phonediv clearfix">
-            <div class="phone" style="display: visble;">
+            <div id="instaphone">
                 <!-- <div class="clip-screen">
                     <div class="screencontent">
                         <div class="screen">
@@ -53,11 +53,11 @@
                     </div>
                 </div> -->
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 456 916"><style type="text/css">  
-                .st0{fill:#FFFFFF;}.st1{fill:#ED4956;}
-	.st2{fill:#D8D8D8;}
-                    </style><path class="st0" d="M382.1 8C417.9 8 447 37.1 447 72.9v770.2c0 35.8-29.1 64.9-64.9 64.9H73.9C38.1 908 9 878.9 9 843.1V72.9C9 37.1 38.1 8 73.9 8H382.1M382.1 3H73.9C35.4 3 4 34.4 4 72.9v770.2C4 881.6 35.4 913 73.9 913h308.2c38.5 0 69.9-31.4 69.9-69.9V72.9C452 34.4 420.6 3 382.1 3L382.1 3z"/>
+                .st0{fill:rgb(255, 255, 255);}.st1{fill:#ED4956;}
+                    .st2{fill:#D8D8D8} .st3{fill:#343434;} .st4{fill:rgb(255, 255, 255);};
+                    </style><path class="st3" d="M382.1 8C417.9 8 447 37.1 447 72.9v770.2c0 35.8-29.1 64.9-64.9 64.9H73.9C38.1 908 9 878.9 9 843.1V72.9C9 37.1 38.1 8 73.9 8H382.1M382.1 3H73.9C35.4 3 4 34.4 4 72.9v770.2C4 881.6 35.4 913 73.9 913h308.2c38.5 0 69.9-31.4 69.9-69.9V72.9C452 34.4 420.6 3 382.1 3L382.1 3z"/>
                     <g class="instascreen">
-                        <rect x="29" y="111.8" class="st0" width="398" height="692.8"/>
+                        <rect class="st4" x="29" y="111.8" class="st0" width="398" height="692.8"/>
                         <path class="st1" d="M62,652c-1.7,0-3.2,0.8-4.3,2c-0.5,0.6-1.4,0.6-1.9,0c-1.2-1.2-2.7-2-4.3-2c-3.6,0-7,3.2-7,7.4 c0,1.9,0.5,4.2,2.7,6.4c2.7,2.7,7,6.3,8.8,7.8c0.5,0.4,1.2,0.4,1.7,0c1.8-1.5,6.1-5.1,8.8-7.8c2.1-2.1,2.7-4.5,2.7-6.4 C69.1,655.2,65.6,652,62,652z"/>
                         <circle class="st2" cx="57.1" cy="205.2" r="17.5"/>
                         <rect x="84.7" y="202" class="st2" width="50.9" height="9"/>
@@ -65,7 +65,7 @@
                         <rect x="44.4" y="719.4" class="st2" width="183.6" height="10.6"/>
                         <rect x="44.4" y="747.5" class="st2" width="183.6" height="10.6"/>
                         <div >
-                        <img class="clip-svg" id="screenimage" src="styles/Img/ConeyIsland.jpg" alt="screen" >
+                        <img class="clip-svg" id="screenimage" src="PanCrop_files/Img/ConeyIsland.jpg" alt="screen" >
                         </div>
                     </g>
                 </svg>
@@ -75,7 +75,18 @@
         <div class="loadcurtain" style="display: none;"></div>
         <div class="start-screen__result">
             <div class="result-tmbs"></div>
-            <div class="please-wait" style="display: none; position: absolute; left: 50%; top: 60px;"><div class="spinner" role="progressbar" style="position: absolute; width: 0px; z-index: 2000000000; left: 50%; top: 50%;"><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-0-8 1s linear infinite;"><div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(0deg) translate(10px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-1-8 1s linear infinite;"><div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(45deg) translate(10px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-2-8 1s linear infinite;"><div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(90deg) translate(10px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-3-8 1s linear infinite;"><div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(135deg) translate(10px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-4-8 1s linear infinite;"><div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(180deg) translate(10px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-5-8 1s linear infinite;"><div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(225deg) translate(10px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-6-8 1s linear infinite;"><div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(270deg) translate(10px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-7-8 1s linear infinite;"><div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(315deg) translate(10px, 0px); border-radius: 2px;"></div></div></div></div>
+            <div class="please-wait" style="display: none; position: absolute; left: 50%; top: 0px;"><div class="spinner" role="progressbar" style="position: absolute; width: 0px; z-index: 2000000000; left: 50%; top: 50%;">
+                <div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-0-8 1s linear infinite;">
+                <div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(0deg) translate(10px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-1-8 1s linear infinite;">
+                <div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(45deg) translate(10px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-2-8 1s linear infinite;">
+                <div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(90deg) translate(10px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-3-8 1s linear infinite;">
+                <div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(135deg) translate(10px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-4-8 1s linear infinite;">
+                <div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(180deg) translate(10px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-5-8 1s linear infinite;">
+                <div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(225deg) translate(10px, 0px); border-radius: 1px;"></div></div>
+                <div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-6-8 1s linear infinite;">
+                <div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(270deg) translate(10px, 0px); border-radius: 1px;"></div></div>
+                <div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-100-25-7-8 1s linear infinite;">
+                <div style="position: absolute; width: 12px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(315deg) translate(10px, 0px); border-radius: 1px;"></div></div></div></div>
         </div>
 
         <div class="start-screen__upload">
@@ -98,10 +109,10 @@
 
     </div>
 
-    <script src="./bower_components/spin.js/spin.min.js"></script>
+    <script src="./PanCrop_files/spin.min.js"></script>
     <!-- <script src="bower_components/spin.js/spin.min.js"></script> -->
     <!-- <script src="bower_components/vow/vow.min.js"></script> -->
-    <script src="./scripts/app.js"></script>
+    <script src="./PanCrop_files/app.js"></script>
 
 
 

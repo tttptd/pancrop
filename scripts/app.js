@@ -91,9 +91,10 @@
         removeNodes(resultFull);
         pleaseWaitVisibility.show();
         resultVisibility.hide();
-        phoneVisibility.hide();
+        /*phoneVisibility.hide();*/
         curtainVisibility.show();
         /* uploadVisibility.hide();*/
+        document.getElementById('instaphone').className = "show";
         getImage(window.URL.createObjectURL(file))
             .then(processingCrop)
             .then(() => window.URL.revokeObjectURL(file))
