@@ -91,13 +91,17 @@
         removeNodes(resultFull);
         pleaseWaitVisibility.show();
         resultVisibility.hide();
-        uploadVisibility.hide();
+        phoneVisibility.hide();
+        curtainVisibility.show();
+        /* uploadVisibility.hide();*/
         getImage(window.URL.createObjectURL(file))
             .then(processingCrop)
             .then(() => window.URL.revokeObjectURL(file))
             .then(pleaseWaitVisibility.hide)
             .then(resultVisibility.show)
-            .then(uploadVisibility.show);
+            /*.then(phoneVisibility.hide)*/
+            .then(curtainVisibility.hide);
+            /*.then(uploadVisibility.show);*/
     }
 
     function removeNodes(el) {
@@ -125,6 +129,8 @@
 
     const uploadVisibility = visibility(document.querySelector('.upload'))
     const resultVisibility = visibility(document.querySelector('.result-screen'))
+    const phoneVisibility = visibility(document.querySelector('.phone'))
+    const curtainVisibility = visibility(document.querySelector('.loadcurtain'))
     const pleaseWaitVisibility = visibility(document.querySelector('.please-wait'))
 
     file.addEventListener('change', onChange);
