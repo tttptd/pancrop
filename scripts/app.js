@@ -80,7 +80,13 @@
             resultTmbs.appendChild(tmb);
 
             fullSize.className = 'result-full__img';
-            resultFull.appendChild(fullSize);
+            // resultFull.appendChild(fullSize);
+            if(i) {
+                resultFull.insertBefore(fullSize, resultFull.childNodes[0]);
+            }
+            else {
+                resultFull.appendChild(fullSize);
+            }
         }
     }
 
@@ -92,6 +98,7 @@
         pleaseWaitVisibility.show();
         resultVisibility.hide();
         uploadVisibility.hide();
+        introVisibility.hide();
         getImage(window.URL.createObjectURL(file))
             .then(processingCrop)
             .then(() => window.URL.revokeObjectURL(file))
@@ -107,12 +114,21 @@
     }
 
     function visibility(el) {
+        /*function transitionendHandler(e) {
+            const el = e.target;
+            el.removeEventListener('transitionend', transitionendHandler);
+            el.style.display = 'none';
+        }*/
+
         return {
             show() {
                 el.style.display = '';
+                // el.style.opacity = 1;
             },
             hide() {
                 el.style.display = 'none';
+                // el.addEventListener('transitionend', transitionendHandler);
+                // el.style.opacity = 0;
             }
         };
     }
@@ -126,6 +142,7 @@
     const uploadVisibility = visibility(document.querySelector('.upload'))
     const resultVisibility = visibility(document.querySelector('.result-screen'))
     const pleaseWaitVisibility = visibility(document.querySelector('.please-wait'))
+    const introVisibility = visibility(document.querySelector('.start-screen__intro'))
 
     file.addEventListener('change', onChange);
 

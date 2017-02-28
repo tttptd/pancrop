@@ -9,8 +9,8 @@
 
 body
 {
-    font-family: Helvetica, sans-serif;
-    background: #3E3E3E;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    background: #000;
     font-size: 18px;
     line-height: 1.6em;
     color: #B9B9B9;
@@ -44,6 +44,18 @@ a.link:visited:hover
     position: relative;
 }
 
+.start-screen__logo
+{
+    text-align: center;
+    padding: 5% 20px 0;
+}
+
+.start-screen__intro
+{
+    margin-top: 5%;
+    /* transition: opacity 200ms ease; */
+}
+
 .start-screen__upload
 {
     position: absolute;
@@ -55,10 +67,121 @@ a.link:visited:hover
 
 .start-screen__result
 {
-    position: relative;
-    top: 30%;
+    position: absolute;
+    top: 20%;
     padding: 0 20px;
+    width: 100%;
 }
+
+/*****************/
+
+.logo
+{
+    margin: auto;
+    width: 45%;
+    max-width: 250px;
+    font-size: 14px;
+}
+
+.description
+{
+
+}
+
+/*****************/
+
+.iphone
+{
+    margin: auto;
+    width: 45%;
+    max-width: 250px;
+    position: relative;
+}
+.iphone__svg
+{
+    width: 100%;
+}
+.iphone__pan
+{
+    overflow: hidden;
+    /* width: 100%; */
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 26%;
+    left: 6.4%;
+    right: 6.3%;
+    height: 42%;
+}
+.iphone__pan-img
+{
+    height: 100%;
+    animation: slide 12s ease infinite;
+}
+.iphone__drag
+{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #565656;
+    position: absolute;
+    top: 50%;
+    /* left: 70%; */
+    z-index: 9;
+    animation: touchmove 12s ease infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    9% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-33%);
+    }
+    66% {
+        transform: translateX(-66%);
+    }
+    90% {
+        transform: translateX(-66%);
+    }
+}
+
+@keyframes touchmove {
+    0% {
+        left: 85%;
+        opacity: 1;
+    }
+    9% {
+        left: 85%;
+    }
+    33% {
+        left: 5%;
+        opacity: 1;
+    }
+    34% {
+        left: 85%;
+        opacity: 0;
+    }
+    35% {
+        left: 85%;
+        opacity: 1;
+    }
+    66% {
+        left: 5%;
+        opacity: 1;
+    }
+    67% {
+        left: 5%;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 /*****************/
 
@@ -66,6 +189,7 @@ a.link:visited:hover
 {
     padding: 20px;
     margin-top: -80px;
+    /* transition: opacity 200ms ease; */
 }
 
 /*****************/
@@ -73,6 +197,7 @@ a.link:visited:hover
 .upload
 {
     cursor: pointer;
+    /* transition: opacity 200ms ease; */
 }
 .upload [type=file]
 {
@@ -101,7 +226,7 @@ a.link:visited:hover
 
 .please-wait
 {
-
+    /* transition: opacity 200ms ease; */
 }
 
 /*****************/
