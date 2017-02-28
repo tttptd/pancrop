@@ -1,8 +1,9 @@
 {
-  "name": "Pancrop",
-  "homepage": "https://github.com/tttptd/pancrop",
+  "name": "Panocrop",
+  "homepage": "https://github.com/panocrop/panocrop",
   "authors": [
-    "Yu Shi <mynsa04@ya.ru>"
+    "Yu Shi <mynsa04@ya.ru>",
+    "Sergey Kim <kimserny@gmail.com>"
   ],
   "description": "",
   "main": "",

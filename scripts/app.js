@@ -1,4 +1,4 @@
-;(function(Promise, undefined) {
+;(function(Promise, Spinner, undefined) {
     'use strict';
 
     const file = document.getElementById('file');
@@ -150,4 +150,4 @@
     /*getImage(document.getElementById('source').src)
         .then(processingCrop);*/
 
-})(Promise);
+})(vow.Promise, Spinner);
