@@ -99,7 +99,7 @@ h2 {
     -webkit-transition: opacity 0.4s ease-out;
     transition: opacity 0.4s ease-out;
 }
-
+/*
 @-webkit-keyframes phoneFadeOut {    
     0%   { opacity: 1; }
   100% { opacity: 0; }
@@ -109,18 +109,18 @@ h2 {
     0%   { opacity: 1; }
   100% { opacity: 0; }
 }
+*/
 
 
-.phonediv {
+#phonediv {
     height: 52%;
-    display: block;
-    margin: auto;
-    /*position: relative;
-    top: 35%;
-    left: 30%;
-    display: block;
-    transform: translate(-30%, -50%);
-    */
+    display: auto;
+    transition: height 1s ease-out;
+}
+
+#phonediv.small {
+    height: 48%;
+    transition: height 1s ease-out;
 }
 
 
@@ -192,114 +192,7 @@ h2 {
     -webkit-transform: translate(-17%, -50%);
             transform: translate(-17%, -50%);
     }
-   /*
-  100% {
-    transform: translate(-30%, -50%);
-  }*/
 }
-/*
-.clip-svg img {
-    width: 100%;
-    height: auto;
-}
-.clip-screen {
-    height: 75%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(186, 54, 120, 0.45);
-} 
-*/
-/*
-.screencontent {
-    height: 133.4px;
-    width:78.0px;
-    background-color: rgba(240, 255, 255, 0.45);
-}
-*/
-/* 
-.clip-svg {
-    clip-path: url(#myClip);
-}
-
-#myClip {
-} 
-
-.screencontent {
-    display: block;
-    width: 400px;
-    height: 695px;
-    position: absolute;
-    left: 28px;
-    top: 111px;
-    background-color: aqua;
-}
-*/
-
-/*
-.phonediv {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.screen {
-    width: 100px;
-    height: 30%;
-    position: absolute;
-    background-color: beige;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-*/
-/* -------------------- */
-/*
-.clip-svg {
-    height: auto;
-    clip-path: url(#myClip);
-}
-#myClip {
-    position: absolute;    
-}
-
-.phone {
-    position: relative;
-    height: 40%;
-
-}
-
-.phonediv {
-    display: block;
-    width: 20%;
-    height: auto;
-    min-width: 200px;
-    max-height: 500px;
-    margin: auto;
-}
-/*
-.screencontent {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(127, 255, 212, 0.42);
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);   
-}
-
-.phonediv {
-    display: block;
-    width: 40%;
-    height: 40%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
 /*****************/
 
 .link,
@@ -335,15 +228,8 @@ label
     text-align: center;
     display: block;
     margin: 0 auto 0 auto;
-    /*position: absolute;
-    bottom: 20%;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    */
     padding-top: 7px;
     background-color:#6a2d90;
-    /*border: solid 2px white;*/
 }
 
 label:hover {
@@ -372,7 +258,7 @@ label:hover {
     display: block;
     margin: auto;
     position: relative;
-    bottom: 12vh;
+    bottom: 14vh;
     -webkit-animation: curtainpop 0.7s ease-in 1 normal;
             animation: curtainpop 0.7s ease-in 1 normal; 
     /*
