@@ -96,8 +96,8 @@ h2 {
 }
 #instaphone.show { 
     opacity: 0;
-    -webkit-transition: opacity 0.4s ease-out;
-    transition: opacity 0.4s ease-out;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
 }
 /*
 @-webkit-keyframes phoneFadeOut {    
@@ -119,8 +119,9 @@ h2 {
 }
 
 #phonediv.small {
-    height: 48%;
+    height: 46%;
     transition: height 1s ease-out;
+    transition-delay: 0.7s;
 }
 
 
