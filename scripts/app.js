@@ -84,6 +84,7 @@
         }
     }
 
+   
     function onChange() {
         const file = this.files[0];
 
@@ -95,6 +96,7 @@
         curtainVisibility.show();
         /* uploadVisibility.hide();*/
         document.getElementById('instaphone').className = "show";
+        document.getElementById('phonediv').className = "small";
         getImage(window.URL.createObjectURL(file))
             .then(processingCrop)
             .then(() => window.URL.revokeObjectURL(file))
