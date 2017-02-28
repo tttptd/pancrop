@@ -80,7 +80,13 @@
             resultTmbs.appendChild(tmb);
 
             fullSize.className = 'result-full__img';
-            resultFull.appendChild(fullSize);
+            // resultFull.appendChild(fullSize);
+            if(i) {
+                resultFull.insertBefore(fullSize, resultFull.childNodes[0]);
+            }
+            else {
+                resultFull.appendChild(fullSize);
+            }
         }
     }
 
@@ -92,6 +98,7 @@
         pleaseWaitVisibility.show();
         resultVisibility.hide();
         uploadVisibility.hide();
+        introVisibility.hide();
         getImage(window.URL.createObjectURL(file))
             .then(processingCrop)
             .then(() => window.URL.revokeObjectURL(file))
@@ -126,6 +133,7 @@
     const uploadVisibility = visibility(document.querySelector('.upload'))
     const resultVisibility = visibility(document.querySelector('.result-screen'))
     const pleaseWaitVisibility = visibility(document.querySelector('.please-wait'))
+    const introVisibility = visibility(document.querySelector('.start-screen__intro'))
 
     file.addEventListener('change', onChange);
 

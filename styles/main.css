@@ -9,7 +9,7 @@
 
 body
 {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Raleway', Helvetica, sans-serif;
     background: #000;
     font-size: 18px;
     line-height: 1.6em;
@@ -44,10 +44,15 @@ a.link:visited:hover
     position: relative;
 }
 
+.start-screen__logo
+{
+    text-align: center;
+    padding: 5% 20px 0;
+}
+
 .start-screen__intro
 {
-    position: relative;
-    top: 5%;
+    margin-top: 5%;
 }
 
 .start-screen__upload
@@ -61,9 +66,25 @@ a.link:visited:hover
 
 .start-screen__result
 {
-    position: relative;
-    top: 30%;
+    position: absolute;
+    top: 20%;
     padding: 0 20px;
+    width: 100%;
+}
+
+/*****************/
+
+.logo
+{
+    margin: auto;
+    width: 45%;
+    max-width: 250px;
+    font-size: 14px;
+}
+
+.description
+{
+
 }
 
 /*****************/
@@ -71,8 +92,8 @@ a.link:visited:hover
 .iphone
 {
     margin: auto;
-    width: 60%;
-    max-width: 300px;
+    width: 45%;
+    max-width: 250px;
     position: relative;
 }
 .iphone__svg
