@@ -53,6 +53,7 @@ a.link:visited:hover
 .start-screen__intro
 {
     margin-top: 5%;
+    /* transition: opacity 200ms ease; */
 }
 
 .start-screen__upload
@@ -188,6 +189,7 @@ a.link:visited:hover
 {
     padding: 20px;
     margin-top: -80px;
+    /* transition: opacity 200ms ease; */
 }
 
 /*****************/
@@ -195,6 +197,7 @@ a.link:visited:hover
 .upload
 {
     cursor: pointer;
+    /* transition: opacity 200ms ease; */
 }
 .upload [type=file]
 {
@@ -223,7 +226,7 @@ a.link:visited:hover
 
 .please-wait
 {
-
+    /* transition: opacity 200ms ease; */
 }
 
 /*****************/

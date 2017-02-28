@@ -114,12 +114,21 @@
     }
 
     function visibility(el) {
+        /*function transitionendHandler(e) {
+            const el = e.target;
+            el.removeEventListener('transitionend', transitionendHandler);
+            el.style.display = 'none';
+        }*/
+
         return {
             show() {
                 el.style.display = '';
+                // el.style.opacity = 1;
             },
             hide() {
                 el.style.display = 'none';
+                // el.addEventListener('transitionend', transitionendHandler);
+                // el.style.opacity = 0;
             }
         };
     }
