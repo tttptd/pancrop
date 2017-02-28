@@ -11,6 +11,8 @@
     clear: both;
     display: table;
 }
+
+
 .loadcurtain {
     width: 100%;
     height: 100%;
@@ -20,6 +22,8 @@
     z-index: 1;
     -webkit-animation: curtainpop 1s ease-in 1 normal;
             animation: curtainpop 1s ease-in 1 normal; 
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
 }
 
 @-webkit-keyframes curtainpop{
@@ -116,11 +120,13 @@ h2 {
     height: 52%;
     display: auto;
     transition: height 1s ease-out;
+    transition-delay: 4s;
 }
 
 #phonediv.small {
-    height: 48%;
-    transition: height 1s ease-out;
+    height: 45%;
+    transition: height 0.5s ease-out;
+    transition-delay: 0.7s;
 }
 
 
@@ -258,7 +264,7 @@ label:hover {
     display: block;
     margin: auto;
     position: relative;
-    bottom: 14vh;
+    bottom: 16vh;
     -webkit-animation: curtainpop 0.7s ease-in 1 normal;
             animation: curtainpop 0.7s ease-in 1 normal; 
     /*
